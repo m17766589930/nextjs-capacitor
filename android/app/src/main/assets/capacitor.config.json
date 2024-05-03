@@ -12,10 +12,5 @@
 			"enabled": true
 		}
 	},
-	"cordova": {},
-	"server": {
-		"hostname": "192.168.10.2:3000",
-		"iosScheme": "http",
-		"androidScheme": "http"
-	}
+	"cordova": {}
 }
