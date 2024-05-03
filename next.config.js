@@ -11,7 +11,7 @@ module.exports = {
     ],
     unoptimized: true,
   },
-  output: 'export',
+  // output: 'export',
   swcMinify: true,
   transpilePackages: [
     '@ionic/react',
@@ -19,4 +19,12 @@ module.exports = {
     '@stencil/core',
     'ionicons',
   ],
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: `https://timeapi.io/api/:path*`
+      },
+    ]
+  }
 };

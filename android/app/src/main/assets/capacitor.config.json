@@ -7,7 +7,15 @@
 	"plugins": {
 		"SplashScreen": {
 			"launchShowDuration": 0
+		},
+		"CapacitorHttp": {
+			"enabled": true
 		}
 	},
-	"cordova": {}
+	"cordova": {},
+	"server": {
+		"hostname": "192.168.10.2:3000",
+		"iosScheme": "http",
+		"androidScheme": "http"
+	}
 }

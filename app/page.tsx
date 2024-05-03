@@ -1,9 +1,8 @@
-import dynamic from 'next/dynamic';
+import Calendar1 from '@/components/pages/Calendar';
 
-const App = dynamic(() => import('../components/AppShell'), {
-  ssr: false,
-});
 
-export default function Page() {
-  return <App />;
+export default async function Page() {
+  return (
+    <Calendar1 />
+  )
 }
