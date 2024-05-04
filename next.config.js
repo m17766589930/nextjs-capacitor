@@ -19,4 +19,12 @@ module.exports = {
     '@stencil/core',
     'ionicons',
   ],
+  async rewrites() {
+    return [
+      {
+        source: '/api/Time/:path*',
+        destination: `https://timeapi.io/api/Time/:path*`
+      },
+    ]
+  }
 };
