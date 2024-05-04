@@ -9,7 +9,7 @@
     "compile": "tsc",
     "compile:watch": "tsc -w",
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev -H 192.168.10.2",
     "lint": "eslint . --ext .ts,.tsx",
     "prettify": "prettier --write **/*.tsx",
     "preserve": "npm run build",
